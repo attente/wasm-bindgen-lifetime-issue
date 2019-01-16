@@ -1,7 +1,8 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+pub struct S {
+}
+
+impl S {
+    pub fn f() -> Result<(), &'static str> {
+        Err("error")
     }
 }
